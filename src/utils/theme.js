@@ -24,7 +24,7 @@ const theme = {
   fontSizeLarge: '70px',
   lineHeight: '30px',
   dangerColor: '#f44336',
-  primaryFontFamily: "'Roboto', sans-serif"
+  primaryFontFamily: "'Roboto', sans-serif",
 };
 
 export default theme;
