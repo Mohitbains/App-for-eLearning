@@ -32,7 +32,7 @@ export default theme;
 const GlobalStyle = createGlobalStyle`
 body {
   font-family: ${theme.primaryFontFamily} !important;
-  color: ${theme.darkAccent} !important;
+
 }
 .max-height {
   max-height: none !important;
@@ -41,6 +41,9 @@ body {
   img {width: 100%;}
 
 }
+.navbar {
+    background-color: transparent !important;
+  }
 `;
 
 export { GlobalStyle };
