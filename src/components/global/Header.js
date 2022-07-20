@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { BsFillCartDashFill, BsSearch } from 'react-icons/bs';
 
 const Nav = styled.div`
+z-index: 900;
  .menu a {
     color: ${(props) => props.theme.lightAccent}!important;
     transition: 0.2s;
@@ -25,14 +26,6 @@ const Nav = styled.div`
   }
 
 `;
-const Video = styled.div`
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-
-    no-repeat center center/cover;
-`;
 
 const Buttons = styled.div`
   a {
@@ -44,18 +37,7 @@ const Buttons = styled.div`
 
 const Header = () => {
   return (
-    <>
-      <Video>
-        <div className="bg-video-wrap">
-          <video
-            src="https://demos.wplms.io//learningcenter//wp-content//uploads//2020//09//Pexels-Videos-2916.mp4"
-            loop
-            muted
-            autoPlay
-          />
-        </div>
-      </Video>
-
+    <div>
       <Nav
         className="navbar is-fixed-top"
         role="navigation"
@@ -117,10 +99,7 @@ const Header = () => {
           </div>
         </div>
       </Nav>
-
-
-
-    </>
+    </div>
   );
 };
 
