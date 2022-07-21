@@ -12,7 +12,7 @@ const Overlay = styled.div`
   bottom: 0;
   background-color: #444f6c90;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   .is-flex {
     height: 100%;
   }
@@ -26,35 +26,44 @@ const Overlay = styled.div`
   }
 `;
 
+const Video = styled.div`
+  video {
+    min-height: 100vh;
+    object-fit: cover;
+  }
+`;
+
 const Hero = () => {
   return (
     <>
-      <div className="is-relative ">
-        <figure className="image is-16by9">
+      <Video className="is-relative ">
+        <Video className="image is-16by9">
           <video
             className="has-ratio"
-            src="https://demos.wplms.io//learningcenter//wp-content//uploads//2020//09//Pexels-Videos-2916.mp4"
+            src="/videos/Pexels-Videos-2916.mp4"
             loop
             muted
             autoPlay
           />
-        </figure>
+        </Video>
         <Overlay className="has-text-centered">
           <div className=" px-5 py-5 is-flex is-justify-content-center is-align-items-center">
-            <div>
-              <h1 className="title is-spaced is-1 is-size-4-mobile ">
+            <div className="pt-6">
+              <h1 className="title is-spaced is-1  ">
                 One App for eLearning - Web or Mobile
               </h1>
-              <p className="subtitle is-6 is-size-7-mobile has-text-white ">
+              <p className="subtitle is-6 has-text-white ">
                 WPLMS is the most modern Learning management system for Web.
               </p>
-              <button className="button px-6 py-5 has-text-white has-text-weight-semibold is-size-7 is-radiusless primarybutton is-uppercase is-medium is-responsive ">
+              <button
+                type="submit"
+                className="button px-6 py-5 has-text-white has-text-weight-semibold is-size-7 is-radiusless primarybutton is-uppercase is-medium is-responsive ">
                 Get your App
               </button>
             </div>
           </div>
         </Overlay>
-      </div>
+      </Video>
     </>
   );
 };

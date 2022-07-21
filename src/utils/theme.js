@@ -25,7 +25,9 @@ const theme = {
   lineHeight: '30px',
   dangerColor: '#f44336',
   primaryFontFamily: "'Roboto', sans-serif",
-  secondayFontFamily:"'Roboto Condensed', sans-serif"
+  secondayFontFamily: "'Roboto Condensed', sans-serif",
+  textDark: '#444F6C',
+  textLight: '#7B8397',
 };
 
 export default theme;
@@ -45,6 +47,12 @@ body {
 .navbar {
     background-color: transparent !important;
   }
+  .textDark{
+  color: ${theme.textDark}
+}
+.textLight{
+  color: ${theme.textLight}
+}
 `;
 
 export { GlobalStyle };

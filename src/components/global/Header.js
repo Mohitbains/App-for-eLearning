@@ -58,7 +58,7 @@ const Header = () => {
 
             <a
               role="button"
-              className="navbar-burger"
+              className="navbar-burger has-text-white"
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample">
@@ -72,7 +72,7 @@ const Header = () => {
             id="navbarBasicExample"
             className="navbar-menu has-text-weight-semibold ">
             <div className="navbar-end menu">
-              <a className="navbar-item ">HOME</a>
+              <a className="navbar-item is-active">HOME</a>
 
               <a className="navbar-item">COURSES</a>
               <a className="navbar-item">PAGES</a>
