@@ -28,6 +28,7 @@ const theme = {
   secondayFontFamily: "'Roboto Condensed', sans-serif",
   textDark: '#444F6C',
   textLight: '#7B8397',
+  fontWeight100: '100',
 };
 
 export default theme;
@@ -35,6 +36,10 @@ export default theme;
 const GlobalStyle = createGlobalStyle`
 body {
   font-family: ${theme.primaryFontFamily} !important;
+
+}
+.secondayFontFamily {
+  font-family: ${theme.secondayFontFamily} !important;
 
 }
 .max-height {
@@ -52,6 +57,9 @@ body {
 }
 .textLight{
   color: ${theme.textLight}
+}
+.fontWeight100{
+  font-weight: ${theme.fontWeight100}
 }
 `;
 

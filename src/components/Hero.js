@@ -27,8 +27,9 @@ const Overlay = styled.div`
 `;
 
 const Video = styled.div`
+  min-height: 100vh !important;
   video {
-    min-height: 100vh;
+    min-height: 100vh !important;
     object-fit: cover;
   }
 `;
@@ -37,7 +38,7 @@ const Hero = () => {
   return (
     <>
       <Video className="is-relative ">
-        <Video className="image is-16by9">
+        <figure className="image is-16by9 p-0">
           <video
             className="has-ratio"
             src="/videos/Pexels-Videos-2916.mp4"
@@ -45,25 +46,25 @@ const Hero = () => {
             muted
             autoPlay
           />
-        </Video>
-        <Overlay className="has-text-centered">
-          <div className=" px-5 py-5 is-flex is-justify-content-center is-align-items-center">
-            <div className="pt-6">
-              <h1 className="title is-spaced is-1  ">
-                One App for eLearning - Web or Mobile
-              </h1>
-              <p className="subtitle is-6 has-text-white ">
-                WPLMS is the most modern Learning management system for Web.
-              </p>
-              <button
-                type="submit"
-                className="button px-6 py-5 has-text-white has-text-weight-semibold is-size-7 is-radiusless primarybutton is-uppercase is-medium is-responsive ">
-                Get your App
-              </button>
-            </div>
-          </div>
-        </Overlay>
+        </figure>
       </Video>
+      <Overlay className="has-text-centered">
+        <div className=" px-5 py-5 is-flex is-justify-content-center is-align-items-center">
+          <div className="pt-6">
+            <h1 className="title is-spaced is-1  ">
+              One App for eLearning - Web or Mobile
+            </h1>
+            <p className="subtitle is-6 has-text-white ">
+              WPLMS is the most modern Learning management system for Web.
+            </p>
+            <button
+              type="submit"
+              className="button px-6 py-5 has-text-white has-text-weight-semibold is-size-7 is-radiusless primarybutton is-uppercase is-medium is-responsive ">
+              Get your App
+            </button>
+          </div>
+        </div>
+      </Overlay>
     </>
   );
 };
