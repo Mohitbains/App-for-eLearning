@@ -61,6 +61,10 @@ body {
 .fontWeight100{
   font-weight: ${theme.fontWeight100}
 }
+.myreact-icons {
+  color: red;
+  height: 2em;
+}
 `;
 
 export { GlobalStyle };
