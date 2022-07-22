@@ -29,6 +29,8 @@ const theme = {
   textDark: '#444F6C',
   textLight: '#7B8397',
   fontWeight100: '100',
+  backgroundBlue: '#313C59',
+  textWhiteLight: '#B8BECC',
 };
 
 export default theme;
@@ -49,21 +51,30 @@ body {
   img {width: 100%;}
 
 }
-.navbar {
+.navbarTransparent {
     background-color: transparent !important;
   }
+  .navbarWhite{
+    background-color: ${theme.lightAccent} !important;
+  }
   .textDark{
-  color: ${theme.textDark}
+  color: ${theme.textDark}!important;
 }
 .textLight{
-  color: ${theme.textLight}
+  color: ${theme.textLight}!important;
 }
 .fontWeight100{
-  font-weight: ${theme.fontWeight100}
+  font-weight: ${theme.fontWeight100}!important;
 }
 .myreact-icons {
   color: red;
   height: 2em;
+}
+.backgroundBlue{
+  background-color:${theme.backgroundBlue};
+}
+.textWhiteLight{
+  color:${theme.textWhiteLight};
 }
 `;
 
