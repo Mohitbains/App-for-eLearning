@@ -47,26 +47,28 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="container has-text-centered py-6">
-      <div className="is-flex has-text-centered is-align-items-center is-justify-content-center  is-flex-direction-column">
-        <h2 className="title is-size-2 secondayFontFamily textDark fontWeight100 is-spaced ">
-          Get <b>Free App</b> for your Education & LMS Site.
-        </h2>
-        <h5 className="subtitle is-size-6 textLight has-text-weight-normal ">
-          Huge savings of <b>Time and Money.</b> The WPLMS PWA plays equally
-          good on <b>Mobile, Desktop, Tablets, and TV&apos;s.</b>
-        </h5>
+    <div className="section has-text-centered py-6">
+      <div className="container">
+        <div className="is-flex has-text-centered is-align-items-center is-justify-content-center  is-flex-direction-column">
+          <h2 className="title is-size-2 secondayFontFamily textDark fontWeight100 is-spaced ">
+            Get <b>Free App</b> for your Education & LMS Site.
+          </h2>
+          <h5 className="subtitle is-size-6 textLight has-text-weight-normal ">
+            Huge savings of <b>Time and Money.</b> The WPLMS PWA plays equally
+            good on <b>Mobile, Desktop, Tablets, and TV&apos;s.</b>
+          </h5>
+        </div>
+        <div className="columns pt-6 has-text-centered is-vcentered is-multiline">
+          {features.map((item) => (
+            <FeauterItem feature={item} />
+          ))}
+        </div>
+        <Button
+          type="submit"
+          className="button mt-6 px-5 py-4 has-text-white has-text-weight-bold is-size-6 primarybutton  is-medium is-responsive ">
+          See all features ›{/* <MdKeyboardArrowRight size={20} /> */}
+        </Button>
       </div>
-      <div className="columns pt-6 has-text-centered is-vcentered is-multiline">
-        {features.map((item) => (
-          <FeauterItem feature={item} />
-        ))}
-      </div>
-      <Button
-        type="submit"
-        className="button mt-6 px-5 py-4 has-text-white has-text-weight-bold is-size-6 primarybutton  is-medium is-responsive ">
-        See all features ›{/* <MdKeyboardArrowRight size={20} /> */}
-      </Button>
     </div>
   );
 };
