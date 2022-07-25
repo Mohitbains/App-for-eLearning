@@ -37,7 +37,7 @@ const Features = () => {
   return (
     <div className="section has-text-centered py-6">
       <div className="container">
-        <div className="is-flex py-6c has-text-centered is-align-items-center is-justify-content-center  is-flex-direction-column">
+        <div className="is-flex py-6 has-text-centered is-align-items-center is-justify-content-center  is-flex-direction-column">
           <h2 className="title is-size-2 secondayFontFamily textDark fontWeight100 is-spaced ">
             What out <b>Customers say</b> about us
           </h2>
