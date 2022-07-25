@@ -1,6 +1,7 @@
 import Brands from '../components/Brands';
 import Courses from '../components/Courses';
 import Features from '../components/Features';
+import GetInTouch from '../components/GetInTouch';
 import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 import ScreensSection from '../components/ScreensSection';
@@ -15,6 +16,7 @@ export default function Home() {
       <Courses />
       <Brands />
       <Testimonial />
+      <GetInTouch />
     </Layout>
   );
 }

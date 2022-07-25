@@ -32,6 +32,7 @@ const theme = {
   backgroundBlue: '#313C59',
   textWhiteLight: '#B8BECC',
   bgLight: '#FAFAFA',
+  bgYellow: '#FFAE29',
 };
 
 export default theme;
@@ -78,7 +79,10 @@ body {
   color:${theme.textWhiteLight};
 }
 .bgLight{
-  background-color:${theme.bgLight}
+  background-color:${theme.bgLight};
+}
+.bgYellow{
+  background-color:${theme.bgYellow};
 }
 `;
 
