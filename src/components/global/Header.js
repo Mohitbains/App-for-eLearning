@@ -41,7 +41,6 @@ const Header = () => {
   const [navbarLogo, setNavbarLogo] = useState('/images/logo.png');
 
   const changeBackground = () => {
-    console.log(window.scrollY);
     if (window.scrollY >= 66) {
       setnavbarTransparent(false);
       setcolor(true);
