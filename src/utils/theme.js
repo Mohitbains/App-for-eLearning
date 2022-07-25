@@ -19,7 +19,7 @@ const theme = {
   // or as the background for inverted designs.
   primaryColor: mainBrandColor,
   secondaryColor: '#lightShades',
-  fontSizeSmall: '15px',
+  fontSizeSmall: '14px',
   fontSizeMedium: '27px',
   fontSizeLarge: '70px',
   lineHeight: '30px',
@@ -31,6 +31,7 @@ const theme = {
   fontWeight100: '100',
   backgroundBlue: '#313C59',
   textWhiteLight: '#B8BECC',
+  bgLight: '#FAFAFA',
 };
 
 export default theme;
@@ -75,6 +76,9 @@ body {
 }
 .textWhiteLight{
   color:${theme.textWhiteLight};
+}
+.bgLight{
+  background-color:${theme.bgLight}
 }
 `;
 
