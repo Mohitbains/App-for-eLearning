@@ -33,6 +33,7 @@ const theme = {
   textWhiteLight: '#B8BECC',
   bgLight: '#FAFAFA',
   bgYellow: '#FFAE29',
+  footerColer: 'rgba(255,255,255,0.54)',
 };
 
 export default theme;
@@ -83,6 +84,12 @@ body {
 }
 .bgYellow{
   background-color:${theme.bgYellow};
+}
+.footerColer{
+  color:${theme.footerColer};
+}
+.fontSizeSmall{
+  font-size:${theme.fontSizeSmall};
 }
 `;
 

@@ -83,7 +83,7 @@ const Header = () => {
               <figure className="image">
                 <Image
                   src={navbarLogo}
-                  alt="djy"
+                  alt="logo"
                   layout="fixed"
                   height={48}
                   width={100}
