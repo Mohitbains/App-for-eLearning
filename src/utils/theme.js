@@ -34,6 +34,7 @@ const theme = {
   bgLight: '#FAFAFA',
   bgYellow: '#FFAE29',
   footerColer: 'rgba(255,255,255,0.54)',
+  bgWhiteLight: '#fafafa',
 };
 
 export default theme;
@@ -77,7 +78,7 @@ body {
   background-color:${theme.backgroundBlue};
 }
 .textWhiteLight{
-  color:${theme.textWhiteLight};
+  color:${theme.textWhiteLight} !important;
 }
 .bgLight{
   background-color:${theme.bgLight};
@@ -90,6 +91,9 @@ body {
 }
 .fontSizeSmall{
   font-size:${theme.fontSizeSmall};
+}
+.bgWhiteLight{
+  background-color:${theme.bgWhiteLight};
 }
 `;
 
