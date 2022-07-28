@@ -37,7 +37,7 @@ const Brands = () => {
         </div>
         <div className="columns pt-6 has-text-centered is-vcentered is-multiline">
           {brands.map((item) => (
-            <BrandItems brand={item} />
+            <BrandItems key={item.id} brand={item} />
           ))}
         </div>
       </div>

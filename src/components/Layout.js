@@ -1,10 +1,10 @@
 import Header from './global/Header';
 import Footer from './global/Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, designData }) => {
   return (
     <div>
-      <Header />
+      <Header designData={designData} />
       {children}
       <Footer />
     </div>

@@ -48,7 +48,7 @@ const Features = () => {
         </div>
         <div className="columns pt-6 has-text-centered is-vcentered is-multiline">
           {testimonials.map((item) => (
-            <TestimonialItem testimonial={item} />
+            <TestimonialItem testimonial={item} key={item.id} />
           ))}
         </div>
       </div>

@@ -31,7 +31,7 @@ const ScreensSection = () => {
         </div>
         <div className="columns pt-6 is-vcentered is-multiline">
           {screens.map((item) => (
-            <ScreenItems screen={item} />
+            <ScreenItems screen={item} key={item.id} />
           ))}
           <div className="column is-4">
             <Image

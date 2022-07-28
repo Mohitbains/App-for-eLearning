@@ -106,14 +106,14 @@ const DesignItem = () => {
           <div className="column is-9">
             <div className="columns is-multiline">
               {posts.map((item) => {
-                return <Card post={item} />;
+                return <Card post={item} key={item.id} />;
               })}
             </div>
           </div>
           <div className="column">
             <div className="columns is-multiline">
               {widgets.map((item) => {
-                return <Widget widget={item} />;
+                return <Widget widget={item} key={item.id} />;
               })}
             </div>
           </div>
