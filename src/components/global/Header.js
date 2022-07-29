@@ -67,14 +67,14 @@ const menu = [
     icon: <IoColorPalette style={iconStyles} />,
     title: 'Design',
     subtitle: 'Interface and Design',
-    slug: 'design1',
+    slug: 'design-thinking',
   },
   {
     id: 2,
     icon: <BsFillTrophyFill style={iconStyles} />,
     title: 'Intelligence',
     subtitle: 'Logic and implementation',
-    slug: 'design',
+    slug: 'intelligence',
   },
   {
     id: 3,
