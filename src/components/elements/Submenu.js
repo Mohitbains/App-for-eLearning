@@ -8,6 +8,7 @@ const Column = styled.div`
   :hover {
     background-color: ${(props) => props.theme.bgYellow};
     border: none;
+
     h1,
     p,
     svg {
@@ -19,7 +20,7 @@ const Submenu = ({ submenu }) => {
   return (
     <Column className="column is-flex p-5 is-4">
       <div className="px-3">{submenu?.icon}</div>
-      <Link href={`/course-category/${submenu.slug}`}>
+      <Link className="title" href={`/course-category/${submenu.slug}`}>
         <a>
           <h1 className="is-uppercase is-size-6 has-text-weight-bold textLight">
             {submenu?.title}

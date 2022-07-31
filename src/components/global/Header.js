@@ -46,7 +46,9 @@ z-index: 900;
     transform: translate(-50%, -50%);
     top: 10rem !important;
 }
-
+.columns a:hover{
+  border:0px !important;
+}
 
 `;
 
