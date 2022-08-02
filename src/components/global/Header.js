@@ -15,6 +15,7 @@ import { GiArtificialHive } from 'react-icons/gi';
 import { GoDatabase } from 'react-icons/go';
 import Submenu from '../elements/Submenu';
 
+const Button = styled.div``;
 const Nav = styled.div`
 z-index: 900;
  .menu a {
@@ -166,21 +167,21 @@ const Header = () => {
               </a>
             </Link>
 
-            <a
-              onClick={() => {
-                setisActive(!isActive);
-              }}
+            <Button
               role="button"
               className={`navbar-burger has-text-white  ${
                 color ? 'textLight' : 'lightAccent'
               } ${isActive ? 'is-active' : ''}`}
               aria-label="menu"
               aria-expanded="false"
-              data-target="navbarBasicExample">
+              data-target="navbarBasicExample"
+              onClick={() => {
+                setisActive(!isActive);
+              }}>
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />
-            </a>
+            </Button>
           </div>
 
           <div
