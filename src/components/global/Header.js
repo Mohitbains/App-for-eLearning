@@ -244,7 +244,7 @@ const Header = () => {
                 APP
               </a> */}
               <div className="is-hidden-desktop">
-                <Link href="/course-category/design">
+                <Link href="/course-category/design-thinking">
                   <a
                     className={`navbar-item is-uppercase ${
                       color ? 'textLight' : 'lightAccent'
