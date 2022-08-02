@@ -211,7 +211,7 @@ const Header = () => {
 
               <div
                 className={`dropdown  is-flex is-align-items-center is-right is-hoverable ${
-                  isActive ? 'is-hidden-mobile ' : ''
+                  isActive ? 'is-hidden-touch ' : ''
                 }`}>
                 <div className="dropdown-trigger">
                   <div aria-haspopup="true" aria-controls="dropdown-menu4">
@@ -296,7 +296,7 @@ const Header = () => {
 
               <Link href="/">
                 <a
-                  className={`navbar-item is-hidden-mobile ${
+                  className={`navbar-item is-hidden-touch ${
                     color ? 'textLight' : 'lightAccent'
                   } ${isActive ? 'textLight  ' : ''} `}>
                   <BsSearch />
