@@ -30,6 +30,7 @@ export default class MyDocument extends Document {
             integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5"
             crossOrigin="anonymous"
           />
+          <link rel="shortcut icon" href="/images/logo_black.png" />
         </Head>
         <body>
           <Main />
