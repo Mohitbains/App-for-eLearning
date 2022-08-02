@@ -243,9 +243,60 @@ const Header = () => {
                 }`}>
                 APP
               </a> */}
+              <div className="is-hidden-desktop">
+                <Link href="/courses">
+                  <a
+                    className={`navbar-item is-uppercase ${
+                      color ? 'textLight' : 'lightAccent'
+                    } ${isActive ? 'textLight  ' : ''}`}>
+                    Design
+                  </a>
+                </Link>
+                <Link href="/courses">
+                  <a
+                    className={`navbar-item is-uppercase ${
+                      color ? 'textLight' : 'lightAccent'
+                    } ${isActive ? 'textLight  ' : ''}`}>
+                    Intelligence
+                  </a>
+                </Link>
+                <Link href="/courses">
+                  <a
+                    className={`navbar-item is-uppercase ${
+                      color ? 'textLight' : 'lightAccent'
+                    } ${isActive ? 'textLight  ' : ''}`}>
+                    Technology
+                  </a>
+                </Link>
+                <Link href="/courses">
+                  <a
+                    className={`navbar-item is-uppercase ${
+                      color ? 'textLight' : 'lightAccent'
+                    } ${isActive ? 'textLight  ' : ''}`}>
+                    Information
+                  </a>
+                </Link>
+                <Link href="/courses">
+                  <a
+                    className={`navbar-item is-uppercase ${
+                      color ? 'textLight' : 'lightAccent'
+                    } ${isActive ? 'textLight  ' : ''}`}>
+                    Artificial Intelligence
+                  </a>
+                </Link>
+                <Link href="/courses">
+                  <a
+                    className={`navbar-item is-uppercase ${
+                      color ? 'textLight' : 'lightAccent'
+                    } ${isActive ? 'textLight  ' : ''}`}>
+                    Data Mining
+                  </a>
+                </Link>
+              </div>
+
               <Link href="/">
                 <a
-                  className={`navbar-item ${
+                  className={`navbar-item is-hidden-mobile ${
                     color ? 'textLight' : 'lightAccent'
                   } ${isActive ? 'textLight  ' : ''} `}>
                   <BsSearch />
