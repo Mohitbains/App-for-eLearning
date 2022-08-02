@@ -92,20 +92,20 @@ const menu = [
     title: 'Information',
 
     subtitle: 'Machine learning and information',
-    slug: 'design',
+    slug: 'information',
   },
   {
     id: 5,
     icon: <GiArtificialHive style={iconStyles} />,
     title: 'Artificial Intelligence',
     subtitle: 'Colab, pytorch & Tensors',
-    slug: 'design',
+    slug: 'artificial-intelligence',
   },
   {
     id: 6,
     icon: <GoDatabase style={iconStyles} />,
     title: 'Data Mining',
-    slug: 'design',
+    slug: 'data-mining',
     subtitle: 'Big Data, No sql, Rule Engine',
   },
 ];
@@ -244,7 +244,7 @@ const Header = () => {
                 APP
               </a> */}
               <div className="is-hidden-desktop">
-                <Link href="/courses">
+                <Link href="/course-category/design">
                   <a
                     className={`navbar-item is-uppercase ${
                       color ? 'textLight' : 'lightAccent'
@@ -252,7 +252,7 @@ const Header = () => {
                     Design
                   </a>
                 </Link>
-                <Link href="/courses">
+                <Link href="/course-category/intelligence">
                   <a
                     className={`navbar-item is-uppercase ${
                       color ? 'textLight' : 'lightAccent'
@@ -260,7 +260,7 @@ const Header = () => {
                     Intelligence
                   </a>
                 </Link>
-                <Link href="/courses">
+                <Link href="/course-category/technology">
                   <a
                     className={`navbar-item is-uppercase ${
                       color ? 'textLight' : 'lightAccent'
@@ -268,7 +268,7 @@ const Header = () => {
                     Technology
                   </a>
                 </Link>
-                <Link href="/courses">
+                <Link href="/course-category/information">
                   <a
                     className={`navbar-item is-uppercase ${
                       color ? 'textLight' : 'lightAccent'
@@ -276,7 +276,7 @@ const Header = () => {
                     Information
                   </a>
                 </Link>
-                <Link href="/courses">
+                <Link href="/course-category/artificial-intelligence">
                   <a
                     className={`navbar-item is-uppercase ${
                       color ? 'textLight' : 'lightAccent'
@@ -284,7 +284,7 @@ const Header = () => {
                     Artificial Intelligence
                   </a>
                 </Link>
-                <Link href="/courses">
+                <Link href="/course-category/data-mining">
                   <a
                     className={`navbar-item is-uppercase ${
                       color ? 'textLight' : 'lightAccent'
