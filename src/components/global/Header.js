@@ -112,7 +112,7 @@ const Header = () => {
   const [navbarTransparent, setnavbarTransparent] = useState(true);
   const [color, setcolor] = useState(true);
   const [navbarLogo, setNavbarLogo] = useState('/images/logo.png');
-
+  const [isActive, setisActive] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 66) {
       setnavbarTransparent(false);
@@ -167,10 +167,13 @@ const Header = () => {
             </Link>
 
             <a
+              onClick={() => {
+                setisActive(!isActive);
+              }}
               role="button"
               className={`navbar-burger has-text-white  ${
                 color ? 'textLight' : 'lightAccent'
-              }`}
+              } ${isActive ? 'is-active' : ''}`}
               aria-label="menu"
               aria-expanded="false"
               data-target="navbarBasicExample">
@@ -182,13 +185,17 @@ const Header = () => {
 
           <div
             id="navbarBasicExample"
-            className="navbar-menu has-text-weight-semibold ">
+            className={`navbar-menu has-text-weight-semibold${
+              isActive
+                ? 'is-active is-flex is-flex-direction-column textLight  '
+                : ''
+            }`}>
             <div className="navbar-end menu ">
               <Link href="/">
                 <a
-                  className={`navbar-item is-active ${
+                  className={`navbar-item ${
                     color ? 'textLight' : 'lightAccent'
-                  }`}>
+                  } ${isActive ? 'textLight  ' : ''}`}>
                   HOME
                 </a>
               </Link>
@@ -196,12 +203,15 @@ const Header = () => {
                 <a
                   className={`navbar-item ${
                     color ? 'textLight' : 'lightAccent'
-                  }`}>
+                  } ${isActive ? 'textLight  ' : ''}`}>
                   COURSES
                 </a>
               </Link>
 
-              <div className=" dropdown  is-flex is-align-items-center is-right is-hoverable">
+              <div
+                className={`dropdown  is-flex is-align-items-center is-right is-hoverable ${
+                  isActive ? 'is-hidden-mobile ' : ''
+                }`}>
                 <div className="dropdown-trigger">
                   <div aria-haspopup="true" aria-controls="dropdown-menu4">
                     <Link href="/course-category/design">
@@ -236,7 +246,7 @@ const Header = () => {
                 <a
                   className={`navbar-item ${
                     color ? 'textLight' : 'lightAccent'
-                  }`}>
+                  } ${isActive ? 'textLight  ' : ''} `}>
                   <BsSearch />
                 </a>
               </Link>
@@ -248,14 +258,14 @@ const Header = () => {
                   <a
                     className={`is-uppercase has-text-weight-light mr-2 ${
                       color ? 'textLight' : 'lightAccent'
-                    }`}>
+                    } ${isActive ? 'textLight  ' : ''}`}>
                     Login
                   </a>
                   <div className="navbar-item ml-2">
                     <a
                       className={`is-uppercase has-text-weight-light mr-2 ${
                         color ? 'textLight' : 'lightAccent'
-                      }`}>
+                      } ${isActive ? 'textLight  ' : ''}`}>
                       <BsFillCartDashFill />
                     </a>
                   </div>
